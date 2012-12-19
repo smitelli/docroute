@@ -1,0 +1,19 @@
+{
+  "template": "templates/root.tpl",
+  "baseUrl": "/docroute",
+  "siteTitle": "Docroute",
+
+  "children": {
+    "default": {
+      "template": "templates/default.tpl"
+    }
+  },
+
+  "notfound": {
+    "template": "templates/not-found.tpl",
+    "title": "Not Found",
+    "headers": [
+      "HTTP/1.0 404 Not Found"
+    ]
+  }
+}
