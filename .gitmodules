@@ -1,0 +1,9 @@
+[submodule "lib/php-markdown"]
+	path = lib/php-markdown
+	url = git://github.com/michelf/php-markdown.git
+[submodule "lib/php-smartypants"]
+	path = lib/php-smartypants
+	url = git://github.com/michelf/php-smartypants.git
+[submodule "lib/smarty"]
+	path = lib/smarty
+	url = git://github.com/ericingram/smarty.git
