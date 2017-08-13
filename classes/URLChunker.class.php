@@ -4,11 +4,11 @@
     private $requestParts = array();
 
     public function __construct($request) {
-      // Always append 'default' to try to load index pages
-      $request .= '/default';
-
-      // Get the path component of the request URI, remove any double slashes
+      // Get the path component of the request URI
       $request = parse_url($request, PHP_URL_PATH);
+
+      // Always append 'default' to try index pages, remove double slashes
+      $request .= '/default';
       $request = preg_replace('@/+@', '/', $request);
 
       // Trim leading/trailing slashes off, split the remainder up
