@@ -15,9 +15,9 @@
   }
   spl_autoload_register('bootstrap_autoload');
 
-  if (isset($_GET['_route_'])) {
-    // Called with a "pretty" .htaccess URL: /app/one/two/three
-    $app = new Application($_GET['_route_']);
+  if (isset($_SERVER['REQUEST_URI'])) {
+    // Called with a "pretty" .htaccess-like URL: /app/one/two/three
+    $app = new Application($_SERVER['REQUEST_URI']);
 
   } else if (isset($_SERVER['PATH_INFO'])) {
     // Called with a PATH_INFO URL: /app/index.php/one/two/three
