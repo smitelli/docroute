@@ -3,6 +3,7 @@
   // Set up constants that define the location of the app's files
   if (!defined('APP_DIR'))     define('APP_DIR',     realpath(dirname(__FILE__)));
   if (!defined('CLASS_DIR'))   define('CLASS_DIR',   APP_DIR . '/classes');
+  if (!defined('COMPILE_DIR')) define('COMPILE_DIR', APP_DIR . '/compile');
   if (!defined('CONTENT_DIR')) define('CONTENT_DIR', APP_DIR . '/content');
 
   // Support autoloading classes as they are needed

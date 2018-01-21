@@ -2,7 +2,6 @@
 
   class SmartyWrapper {
     const SMARTY_LIB  = '/lib/smarty/libs/Smarty.class.php';
-    const COMPILE_DIR = '/compile';
     private static $instance = NULL;
 
     public static function getInstance() {
@@ -21,7 +20,7 @@
 
       // Build a new Smarty instance, set up universal config options
       $smarty = new Smarty();
-      $smarty->compile_dir  = APP_DIR . self::COMPILE_DIR;
+      $smarty->compile_dir  = COMPILE_DIR;
       $smarty->template_dir = CONTENT_DIR;
 
       // Return the instance
