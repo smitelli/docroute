@@ -8,7 +8,7 @@
     private $template  = NULL;
 
     public function __construct($requestURL = '/') {
-      header('X-Powered-By: Docroute (http://www.scottsmitelli.com/projects/docroute)');
+      header('X-Powered-By: Docroute (https://www.scottsmitelli.com/projects/docroute)');
 
       // Classes to split requests URLs up and build config paths from them
       $this->chunker   = new URLChunker($requestURL);
